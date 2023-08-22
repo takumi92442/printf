@@ -6,7 +6,7 @@
 /*   By: takumi <takumi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/06 13:18:48 by marvin            #+#    #+#             */
-/*   Updated: 2023/08/23 00:01:36 by takumi           ###   ########.fr       */
+/*   Updated: 2023/08/23 01:13:26 by takumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@
 
 
 int     ft_printf(const char *, ...);
-int baseC(char C);
+int base_c(char C);
 int ft_strlen(const char *S);
-int  baseS(const char *S);
-int baseTen(int number);
-int basePointer(uintptr_t p);
-int  BigBaseSixteen(unsigned int number);
-int  SmallBaseSixteen(unsigned int number);
-int UnsignedBaseTen(unsigned int number);
-int Persent();
+int  base_s(const char *S);
+int base_ten(int number);
+int base_pointer(uintptr_t p);
+int  big_base_sixteen(unsigned int number);
+int  smallbase_sixteen(unsigned int number);
+int unsigned_base_ten(unsigned int number);
+int persent();
 #endif
