@@ -6,13 +6,13 @@
 /*   By: takumi <takumi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 00:38:44 by takumi            #+#    #+#             */
-/*   Updated: 2023/08/22 01:49:04 by takumi           ###   ########.fr       */
+/*   Updated: 2023/08/22 23:59:54 by takumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int NumberCount(int number)
+static int NumberCount(int number)
 {
     long long buffer;
     int count;
@@ -50,7 +50,7 @@ int baseTen(int number)
     return (NumberCount(number));
 }
 
-int UnsignedNumberCount(unsigned int number)
+static int UnsignedNumberCount(unsigned int number)
 {
     int count;
     count = 0;
@@ -62,7 +62,7 @@ int UnsignedNumberCount(unsigned int number)
     return count + 1;
 }
 
-unsigned int UnsignedBaseTen(unsigned int number)
+int UnsignedBaseTen(unsigned int number)
 {
     if(number / 10 == 0)
         baseC(number + '0');

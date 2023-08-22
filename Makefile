@@ -3,7 +3,7 @@ AR		= ar rc
 CC		= cc
 CFLAGS	= -Wall -Wextra -Werror
 RM		= rm -f
-SRCS	= ft_printf.c 
+SRCS	= baseP.c baseSC.c baseSixteen.c baseTen.c ft_printf.c 
 OBJS	= $(SRCS:%.c=%.o)
 
 all: ${NAME}

@@ -6,7 +6,7 @@
 /*   By: takumi <takumi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 00:06:42 by takumi            #+#    #+#             */
-/*   Updated: 2023/08/22 01:30:24 by takumi           ###   ########.fr       */
+/*   Updated: 2023/08/23 00:19:42 by takumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ int ft_strlen(const char *S)
 int  baseS(const char *S)
 {
     int count;
+    if(S == NULL)
+        return (write(1,"(null)",6));
     count = ft_strlen(S);
     return write(1,S, count);
 }

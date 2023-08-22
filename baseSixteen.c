@@ -6,13 +6,13 @@
 /*   By: takumi <takumi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 01:31:22 by takumi            #+#    #+#             */
-/*   Updated: 2023/08/22 01:58:07 by takumi           ###   ########.fr       */
+/*   Updated: 2023/08/22 23:58:10 by takumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int SixteenNumberCount(unsigned int number)
+static int SixteenNumberCount(unsigned int number)
 {
     int count;
     count = 0;
@@ -47,12 +47,12 @@ int  SmallBaseSixteen(unsigned int number)
     }
     return (SixteenNumberCount(number));
 }
-#include<stdio.h>
-int main()
-{
-    int number;
-    number = 255;
-    int count;
-    count = SmallBaseSixteen(number);
-    printf("\n %d",count);
-}
+// #include<stdio.h>
+// int main()
+// {
+//     int number;
+//     number = 255;
+//     int count;
+//     count = SmallBaseSixteen(number);
+//     printf("\n %d",count);
+// }
